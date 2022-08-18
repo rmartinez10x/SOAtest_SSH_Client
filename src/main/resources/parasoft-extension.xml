@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+	xmlns="urn:ocm/parasoft/extensibility-framework/v1/extension"
+	type="tool" name='SSH Client'
+	description='Tool for sending SSH commands'>
+	<class>com.testified.soavirt.tool.SshClient</class>
+	<tool
+		xmlns="http://schemas.parasoft.com/extensibility-framework/v1/tool">
+		<outputs>
+			<output key="response" name="Modified Response" />
+		</outputs>
+	</tool>
+	<form xmlns="urn:com/parasoft/extensibility-framework/gui">
+	<section label="Main Settings">
+			<field id="host" label="Host:" type="String" />
+			<field id="port" label="port:" type="String" />
+			<field id="username" label="Username:" type="String" />
+			<field id="password" label="Passoword:" type="password" />
+			<field id="commandText" label="SSH Command(Seperate multiple commands with a ';' character):" type="String" />
+		</section>
+	</form>
+</extension>

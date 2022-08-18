@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.testified.soavirt.tool</groupId>
+	<artifactId>sshClient</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>sshClient</name>
+	<description>A tool for sending ssh commands</description>
+
+
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.jcraft/jsch -->
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.55</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.parasoft.soavirt</groupId>
+			<artifactId>com.parasoft.api</artifactId>
+			<version>2021.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<repositories>
+		<repository>
+			<id>ParasoftMavenPublic</id>
+			<name>Parasoft Public Repository</name>
+			<url>http://build.parasoft.com/maven/</url>
+		</repository>
+	</repositories>
+</project>
